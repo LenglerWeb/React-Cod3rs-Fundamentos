@@ -1,13 +1,13 @@
 import './App.css'
 import React from 'react'
 
-import Primeiro from './components/Primeiro'
-import ComParametro from './components/ComParametro'
-import ComFilhos from './components/ComFilhos'
+import Primeiro from './components/basics/Primeiro'
+import ComParametro from './components/basics/ComParametro'
+import ComFilhos from './components/basics/ComFilhos'
 import Card from './components/layout/Card'
-import Repeticao from './components/Repeticao'
-import Condicional from './components/Condicional'
-import CondicionalComIf from './components/CondicionalComIf'
+import Repeticao from './components/basics/Repeticao'
+import Condicional from './components/basics/Condicional'
+import CondicionalComIf from './components/basics/CondicionalComIf'
 
 export default (props) => (
     <div className="App">
@@ -41,21 +41,5 @@ export default (props) => (
             <Primeiro />
         </Card>
 
-        
-
-
-
-        {/* <ComFilhos>
-            <ul>
-                <li>Daniele</li>
-                <li>Nancy</li>
-                <li>Amanda</li>
-                <li>Wanda Lúcia</li>
-            </ul>
-        </ComFilhos> */}
-
-         {/* <Primeiro />
-         <ComParametro titulo="Esse é o título" subtitulo="Esse é o subtítulo" />
-         <ComParametro titulo="Opa" subtitulo="Epa" /> */}
     </div>
-)
+);
