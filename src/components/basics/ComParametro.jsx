@@ -1,5 +1,8 @@
 import React from 'react'
 
+// props é SOMENTE LEITURA!!!!!
+// Não é permitido alterações em constantes. Exemplo: props.titulo = "Outro Título"
+// isso irá gerar um erro no projeto
 export default props =>
     <>
         <h3>{props.titulo}</h3>
