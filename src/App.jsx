@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import './App.css'
 import React from 'react'
 
@@ -9,11 +10,16 @@ import Repeticao from './components/basics/Repeticao'
 import Condicional from './components/basics/Condicional'
 import CondicionalComIf from './components/basics/CondicionalComIf'
 import Pai from './components/comunicacao/direta/Pai'
+import Super from './components/comunicacao/indireta/Super'
 
 export default (props) => (
     <div className="App">
+        <Card titulo="#08 - Comunicação Indireta" color="#E94C6F">
+            <Super></Super>
+        </Card>
+
         <Card titulo="#07 - Comunicação Direta" color="#28ABE3">
-            <Pai></Pai>
+            <Pai sobrenome="Lengler"></Pai>
         </Card>
 
         <Card titulo="#06 - Condicional v2" color="#FA6900">
