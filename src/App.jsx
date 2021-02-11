@@ -11,9 +11,22 @@ import Condicional from './components/basics/Condicional'
 import CondicionalComIf from './components/basics/CondicionalComIf'
 import Pai from './components/comunicacao/direta/Pai'
 import Super from './components/comunicacao/indireta/Super'
+import Input from './components/form/Input'
+import Contador from './components/contador/Contador'
 
 export default (props) => (
     <div className="App">
+        <h1>Fundamentos React</h1>
+        
+        <div className="Cards">
+        <Card titulo="#10 - Contador" color="#D96459">
+            <Contador></Contador>
+        </Card>
+
+        <Card titulo="#09 - Input" color="#588C73">
+            <Input></Input>
+        </Card>
+
         <Card titulo="#08 - Comunicação Indireta" color="#E94C6F">
             <Super></Super>
         </Card>
@@ -52,6 +65,6 @@ export default (props) => (
         <Card titulo="#01 - Primeiro Componente" color="#69D2E7">
             <Primeiro />
         </Card>
-
+        </div>
     </div>
 );
