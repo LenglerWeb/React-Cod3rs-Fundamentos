@@ -1,3 +1,4 @@
+import './Contador.css'
 import React, { Component } from 'react'
 
 export default class Contador extends Component {
@@ -23,10 +24,10 @@ export default class Contador extends Component {
 
     render() {
         return (
-            <div>
+            <div className='Contador'>
                 <h2>Contador</h2>
                 <div>
-                    <label for="passoInput">Passo: {this.state.passo}</label>
+                    <label for="passoInput">Passo: </label>
                     <input id="passoInput" type="number" 
                         value={this.state.passo}
                         onChange={e => this.setState({ passo: +e.target.value })}/>
@@ -35,8 +36,8 @@ export default class Contador extends Component {
                 <h4>Valor: {this.state.valor}</h4>
 
                 <div>
-                    <button onClick={this.inc}>+</button>
                     <button onClick={this.dec}>-</button>
+                    <button onClick={this.inc}>+</button>
                 </div>
             </div>
         )
